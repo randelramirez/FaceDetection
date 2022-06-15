@@ -1,3 +1,5 @@
+using FaceDetection.MVC.Services;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,6 +25,17 @@ namespace FaceDetection.MVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMassTransit();
+            services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(
+
+                config =>
+                {
+                    var host = config.Host("localhost", "/", h => { });
+                    services.AddSingleton(provider => provider.GetRequiredService<IBusControl>());
+                    services.AddSingleton<IHostedService, BusService>();
+                }
+                ));
+
             services.AddControllersWithViews();
         }
 
