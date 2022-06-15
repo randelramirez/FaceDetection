@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.API", "FaceDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.ConsoleAppTester", "FaceDetection.ConsoleAppTester\FaceDetection.ConsoleAppTester.csproj", "{686DDF71-2D71-49A7-9AF4-93E0382EBDDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Messaging.InterfacesConstants", "FaceDetection.Messaging.InterfacesConstants\FaceDetection.Messaging.InterfacesConstants.csproj", "{B91DA077-776F-4025-B2D6-F42228BCE91D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{686DDF71-2D71-49A7-9AF4-93E0382EBDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{686DDF71-2D71-49A7-9AF4-93E0382EBDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{686DDF71-2D71-49A7-9AF4-93E0382EBDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91DA077-776F-4025-B2D6-F42228BCE91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91DA077-776F-4025-B2D6-F42228BCE91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91DA077-776F-4025-B2D6-F42228BCE91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91DA077-776F-4025-B2D6-F42228BCE91D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
